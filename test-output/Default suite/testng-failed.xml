@@ -6,8 +6,8 @@
       <class name="com.bridgelabz.linkedin.testcases.HomePageTest">
         <methods>
           <include name="beginTest"/>
-          <include name="uploadImagePostTest" invocation-numbers="0"/>
           <include name="endTest"/>
+          <include name="verifyHomePageTitleTest"/>
         </methods>
       </class> <!-- com.bridgelabz.linkedin.testcases.HomePageTest -->
     </classes>

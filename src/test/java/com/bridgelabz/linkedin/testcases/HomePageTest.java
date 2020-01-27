@@ -45,7 +45,7 @@ public class HomePageTest extends TestBase{
 	public void verifyHomePageTitleTest() {
 		
 		validate = homePage.verifyHomePageTitle();
-		assertEquals(validate, "LinkedIn");
+		assertEquals(validate, "(1) LinkedIn");
 	}
 	
 	
