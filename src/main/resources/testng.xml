@@ -4,9 +4,9 @@
 	<test name = "LinkedIn App Test">
 		
 		<classes>
-			<!-- <class name="com.bridgelabz.linkedin.testcases.HomePageTest" /> -->
 			<class name="com.bridgelabz.linkedin.testcases.JoinNowPageTest" />
 			<class name="com.bridgelabz.linkedin.testcases.SignInPageTest" />
+			<class name="com.bridgelabz.linkedin.testcases.HomePageTest" />
 		</classes>
 		
 	</test>

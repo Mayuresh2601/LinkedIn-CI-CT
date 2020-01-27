@@ -1,17 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-27T09:01:56Z" name="Default suite" finished-at="2020-01-27T09:04:04Z" duration-ms="128420">
+  <suite started-at="2020-01-27T09:11:57Z" name="LinkedIn Application Test Automation Suite" finished-at="2020-01-27T09:15:45Z" duration-ms="227485">
     <groups>
     </groups>
-    <test started-at="2020-01-27T09:01:56Z" name="Default test" finished-at="2020-01-27T09:04:04Z" duration-ms="128420">
-      <class name="com.bridgelabz.linkedin.testcases.HomePageTest">
-        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:01:56Z" name="beginTest" finished-at="2020-01-27T09:02:15Z" duration-ms="18780" status="PASS">
+    <test started-at="2020-01-27T09:11:57Z" name="LinkedIn App Test" finished-at="2020-01-27T09:15:45Z" duration-ms="227485">
+      <class name="com.bridgelabz.linkedin.testcases.SignInPageTest">
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:18Z" name="beginTest" finished-at="2020-01-27T09:12:20Z" duration-ms="1898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method signature="createTextPostTest(java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:02:15Z" name="createTextPostTest" data-provider="getTextPostData" finished-at="2020-01-27T09:02:23Z" duration-ms="8302" status="PASS">
+        <test-method signature="SignInTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:20Z" name="SignInTest" finished-at="2020-01-27T09:12:33Z" duration-ms="12683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:33Z" name="endTest" finished-at="2020-01-27T09:12:33Z" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:34Z" name="beginTest" finished-at="2020-01-27T09:12:36Z" duration-ms="1993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="SignInTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:36Z" name="SignInTest" data-provider="getSignInTestData" finished-at="2020-01-27T09:12:42Z" duration-ms="6051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mayuresh@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mayur@123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:42Z" name="endTest" finished-at="2020-01-27T09:12:42Z" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:42Z" name="beginTest" finished-at="2020-01-27T09:12:45Z" duration-ms="2778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="SignInTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:45Z" name="SignInTest" data-provider="getSignInTestData" finished-at="2020-01-27T09:12:53Z" duration-ms="8055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ankush@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ankush@123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:53Z" name="endTest" finished-at="2020-01-27T09:12:53Z" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:53Z" name="beginTest" finished-at="2020-01-27T09:12:55Z" duration-ms="1852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="SignInTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:12:55Z" name="SignInTest" data-provider="getSignInTestData" finished-at="2020-01-27T09:13:01Z" duration-ms="6236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rohit@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rohit@123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:01Z" name="endTest" finished-at="2020-01-27T09:13:01Z" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:01Z" name="beginTest" finished-at="2020-01-27T09:13:03Z" duration-ms="1790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="SignInTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:03Z" name="SignInTest" data-provider="getSignInTestData" finished-at="2020-01-27T09:13:09Z" duration-ms="5914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sachin@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sachin@123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:09Z" name="endTest" finished-at="2020-01-27T09:13:09Z" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:09Z" name="beginTest" finished-at="2020-01-27T09:13:12Z" duration-ms="2843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="SignInTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:12Z" name="SignInTest" data-provider="getSignInTestData" finished-at="2020-01-27T09:13:18Z" duration-ms="6356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[premsai@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Premsai@123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:18Z" name="endTest" finished-at="2020-01-27T09:13:18Z" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:18Z" name="beginTest" finished-at="2020-01-27T09:13:20Z" duration-ms="1792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="validateForgetPasswordLinkTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:20Z" name="validateForgetPasswordLinkTest" finished-at="2020-01-27T09:13:28Z" duration-ms="8258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateForgetPasswordLinkTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:28Z" name="endTest" finished-at="2020-01-27T09:13:28Z" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:28Z" name="beginTest" finished-at="2020-01-27T09:13:30Z" duration-ms="1897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="validateHidePasswordTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:30Z" name="validateHidePasswordTest" finished-at="2020-01-27T09:13:32Z" duration-ms="2176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHidePasswordTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:32Z" name="endTest" finished-at="2020-01-27T09:13:33Z" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:33Z" name="beginTest" finished-at="2020-01-27T09:13:35Z" duration-ms="2182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="validateJoinNowLinkTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:35Z" name="validateJoinNowLinkTest" finished-at="2020-01-27T09:13:37Z" duration-ms="1718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateJoinNowLinkTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:37Z" name="endTest" finished-at="2020-01-27T09:13:37Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:37Z" name="beginTest" finished-at="2020-01-27T09:13:39Z" duration-ms="2252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="validateShowPasswordTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:39Z" name="validateShowPasswordTest" finished-at="2020-01-27T09:13:41Z" duration-ms="2311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateShowPasswordTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:41Z" name="endTest" finished-at="2020-01-27T09:13:41Z" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:41Z" name="beginTest" finished-at="2020-01-27T09:13:43Z" duration-ms="2004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="verifySignInPageTitleTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:43Z" name="verifySignInPageTitleTest" finished-at="2020-01-27T09:13:45Z" duration-ms="1577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInPageTitleTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.SignInPageTest@72057ecf]" started-at="2020-01-27T09:13:45Z" name="endTest" finished-at="2020-01-27T09:13:45Z" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.bridgelabz.linkedin.testcases.SignInPageTest -->
+      <class name="com.bridgelabz.linkedin.testcases.HomePageTest">
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:13:45Z" name="beginTest" finished-at="2020-01-27T09:13:57Z" duration-ms="11923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="createTextPostTest(java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:13:57Z" name="createTextPostTest" data-provider="getTextPostData" finished-at="2020-01-27T09:14:04Z" duration-ms="7461" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +216,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTextPostTest -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:02:23Z" name="endTest" finished-at="2020-01-27T09:02:23Z" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:14:04Z" name="endTest" finished-at="2020-01-27T09:14:05Z" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:02:23Z" name="beginTest" finished-at="2020-01-27T09:02:39Z" duration-ms="15592" status="PASS">
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:14:05Z" name="beginTest" finished-at="2020-01-27T09:14:17Z" duration-ms="12324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method signature="createTextPostTest(java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:02:39Z" name="createTextPostTest" data-provider="getTextPostData" finished-at="2020-01-27T09:02:48Z" duration-ms="8877" status="PASS">
+        <test-method signature="createTextPostTest(java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:14:17Z" name="createTextPostTest" data-provider="getTextPostData" finished-at="2020-01-27T09:14:25Z" duration-ms="7862" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +235,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTextPostTest -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:02:48Z" name="endTest" finished-at="2020-01-27T09:02:48Z" duration-ms="79" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:14:25Z" name="endTest" finished-at="2020-01-27T09:14:25Z" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:02:48Z" name="beginTest" finished-at="2020-01-27T09:03:02Z" duration-ms="13808" status="PASS">
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:14:25Z" name="beginTest" finished-at="2020-01-27T09:14:37Z" duration-ms="12325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method signature="createTextPostTest(java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:03:02Z" name="createTextPostTest" data-provider="getTextPostData" finished-at="2020-01-27T09:03:10Z" duration-ms="8396" status="PASS">
+        <test-method signature="createTextPostTest(java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:14:37Z" name="createTextPostTest" data-provider="getTextPostData" finished-at="2020-01-27T09:14:45Z" duration-ms="7630" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,15 +254,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTextPostTest -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:03:10Z" name="endTest" finished-at="2020-01-27T09:03:10Z" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:14:45Z" name="endTest" finished-at="2020-01-27T09:14:45Z" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:03:10Z" name="beginTest" finished-at="2020-01-27T09:03:24Z" duration-ms="13520" status="PASS">
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:14:45Z" name="beginTest" finished-at="2020-01-27T09:14:57Z" duration-ms="12182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method signature="uploadImagePostTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:03:24Z" name="uploadImagePostTest" data-provider="getImgTextPostData" finished-at="2020-01-27T09:03:40Z" duration-ms="15541" status="PASS">
+        <test-method signature="uploadImagePostTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:14:57Z" name="uploadImagePostTest" data-provider="getImgTextPostData" finished-at="2020-01-27T09:15:11Z" duration-ms="13958" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,15 +278,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadImagePostTest -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:03:40Z" name="endTest" finished-at="2020-01-27T09:03:40Z" duration-ms="287" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:15:11Z" name="endTest" finished-at="2020-01-27T09:15:11Z" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:03:40Z" name="beginTest" finished-at="2020-01-27T09:03:54Z" duration-ms="13855" status="PASS">
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:15:11Z" name="beginTest" finished-at="2020-01-27T09:15:22Z" duration-ms="10996" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method signature="uploadImagePostTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:03:54Z" name="uploadImagePostTest" data-provider="getImgTextPostData" finished-at="2020-01-27T09:04:04Z" duration-ms="10266" status="PASS">
+        <test-method signature="uploadImagePostTest(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:15:22Z" name="uploadImagePostTest" data-provider="getImgTextPostData" finished-at="2020-01-27T09:15:32Z" duration-ms="9682" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,11 +302,73 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadImagePostTest -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@188715b5]" started-at="2020-01-27T09:04:04Z" name="endTest" finished-at="2020-01-27T09:04:04Z" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:15:32Z" name="endTest" finished-at="2020-01-27T09:15:32Z" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:15:32Z" name="beginTest" finished-at="2020-01-27T09:15:44Z" duration-ms="11944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="verifyHomePageTitleTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:15:44Z" name="verifyHomePageTitleTest" finished-at="2020-01-27T09:15:44Z" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.HomePageTest@1afd44cb]" started-at="2020-01-27T09:15:44Z" name="endTest" finished-at="2020-01-27T09:15:45Z" duration-ms="477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- com.bridgelabz.linkedin.testcases.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.bridgelabz.linkedin.testcases.JoinNowPageTest">
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:11:57Z" name="beginTest" finished-at="2020-01-27T09:12:02Z" duration-ms="4666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="registrationPageTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:02Z" name="registrationPageTest" finished-at="2020-01-27T09:12:08Z" duration-ms="6313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationPageTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:08Z" name="endTest" finished-at="2020-01-27T09:12:08Z" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:08Z" name="beginTest" finished-at="2020-01-27T09:12:10Z" duration-ms="2066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="validateChangeLanguageLinkTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:10Z" name="validateChangeLanguageLinkTest" finished-at="2020-01-27T09:12:11Z" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateChangeLanguageLinkTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:11Z" name="endTest" finished-at="2020-01-27T09:12:11Z" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:11Z" name="beginTest" finished-at="2020-01-27T09:12:13Z" duration-ms="1833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="validateSignInPageLinkTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:13Z" name="validateSignInPageLinkTest" finished-at="2020-01-27T09:12:15Z" duration-ms="1771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignInPageLinkTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:15Z" name="endTest" finished-at="2020-01-27T09:12:15Z" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="beginTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:15Z" name="beginTest" finished-at="2020-01-27T09:12:17Z" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method signature="verifyRegisterPageTitleTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:17Z" name="verifyRegisterPageTitleTest" finished-at="2020-01-27T09:12:18Z" duration-ms="857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterPageTitleTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.bridgelabz.linkedin.testcases.JoinNowPageTest@192d43ce]" started-at="2020-01-27T09:12:18Z" name="endTest" finished-at="2020-01-27T09:12:18Z" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.bridgelabz.linkedin.testcases.JoinNowPageTest -->
+    </test> <!-- LinkedIn App Test -->
+  </suite> <!-- LinkedIn Application Test Automation Suite -->
 </testng-results>
