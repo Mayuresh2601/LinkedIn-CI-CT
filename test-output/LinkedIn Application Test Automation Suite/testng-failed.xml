@@ -5,11 +5,36 @@
     <classes>
       <class name="com.bridgelabz.linkedin.testcases.JoinNowPageTest">
         <methods>
+          <include name="verifyRegisterPageTitleTest"/>
           <include name="registrationPageTest"/>
           <include name="endTest"/>
+          <include name="validateChangeLanguageLinkTest"/>
           <include name="beginTest"/>
+          <include name="validateSignInPageLinkTest"/>
         </methods>
       </class> <!-- com.bridgelabz.linkedin.testcases.JoinNowPageTest -->
+      <class name="com.bridgelabz.linkedin.testcases.SignInPageTest">
+        <methods>
+          <include name="beginTest"/>
+          <include name="validateHidePasswordTest"/>
+          <include name="verifySignInPageTitleTest"/>
+          <include name="endTest"/>
+          <include name="validateJoinNowLinkTest"/>
+          <include name="validateForgetPasswordLinkTest"/>
+          <include name="validateShowPasswordTest"/>
+          <include name="SignInTest"/>
+          <include name="SignInTest"/>
+        </methods>
+      </class> <!-- com.bridgelabz.linkedin.testcases.SignInPageTest -->
+      <class name="com.bridgelabz.linkedin.testcases.HomePageTest">
+        <methods>
+          <include name="createTextPostTest"/>
+          <include name="beginTest"/>
+          <include name="uploadImagePostTest"/>
+          <include name="endTest"/>
+          <include name="verifyHomePageTitleTest"/>
+        </methods>
+      </class> <!-- com.bridgelabz.linkedin.testcases.HomePageTest -->
     </classes>
   </test> <!-- LinkedIn App Test(failed) -->
 </suite> <!-- Failed suite [LinkedIn Application Test Automation Suite] -->

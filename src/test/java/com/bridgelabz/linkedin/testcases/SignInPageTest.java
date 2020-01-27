@@ -17,10 +17,10 @@ public class SignInPageTest extends TestBase{
 	/**
 	 * Constructor: To Avoid Null Pointer Exception by going to parent class(TestBase) using super()
 	 */
-	public SignInPageTest() {
-		
-		super();
-	}
+//	public SignInPageTest() {
+//		
+//		super();
+//	}
 	
 	
 	/**
@@ -29,7 +29,7 @@ public class SignInPageTest extends TestBase{
 	@BeforeMethod
 	public void beginTest() {
 		
-		init_Driver(properties.getProperty("cromebrowser"));
+		init_Driver(properties.getProperty("chromebrowser"));
 		signIn = new SignInPage();
 	}
 	

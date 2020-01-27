@@ -19,10 +19,10 @@ public class HomePageTest extends TestBase{
 	/**
 	 * Constructor: To Avoid Null Pointer Exception by going to parent class(TestBase) using super()
 	 */
-	public HomePageTest() {
-		
-		super();
-	}
+//	public HomePageTest() {
+//		
+//		super();
+//	}
 	
 	
 	/**Method: To Run Initialize method before running each Testcases
@@ -31,7 +31,7 @@ public class HomePageTest extends TestBase{
 	@BeforeMethod
 	public void beginTest() throws InterruptedException {
 		
-		init_Driver(properties.getProperty("cromebrowser"));
+		init_Driver(properties.getProperty("chromebrowser"));
 		signIn = new SignInPage();
 		homePage = signIn.signIn(properties.getProperty("emailId"), properties.getProperty("passWord"));
 	}

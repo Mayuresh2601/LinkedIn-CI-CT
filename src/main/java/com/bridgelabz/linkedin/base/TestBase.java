@@ -2,7 +2,6 @@ package com.bridgelabz.linkedin.base;
 
 import java.awt.Robot;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -36,7 +35,7 @@ public class TestBase {
 	public static TestUtil utility;
 	public static String validate;
 	public static boolean flag;
-	
+
 	/**
 	 * Constructor: To Load the Properties file in file.io
 	 */
@@ -46,9 +45,7 @@ public class TestBase {
 			properties = new Properties();
 			file = new FileInputStream("/home/admin1/eclipse-workspace/Mayuresh/Selenium/Linkedin/src/main/java/com/bridgelabz/linkedin/config/config.properties");
 			properties.load(file);
-			
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -62,6 +59,7 @@ public class TestBase {
 		
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "/home/admin1/eclipse-workspace/Mayuresh/Selenium/Linkedin/src/main/java/com/bridgelabz/linkedin/drivers/chromedriver");
+			//WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "/home/admin1/eclipse-workspace/Mayuresh/Selenium/Linkedin/src/main/java/com/bridgelabz/linkedin/drivers/geckodriver");
