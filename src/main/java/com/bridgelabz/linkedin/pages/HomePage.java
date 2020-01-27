@@ -20,7 +20,7 @@ public class HomePage extends TestBase{
 	@FindBy(xpath = "//button[contains(@class,'open share')]")
 	WebElement post;
 	
-	@FindBy(xpath = "//div[contains(@class,'mentions')]/p")
+	@FindBy(xpath = "//p[@class='mentions-texteditor__content']")
 	WebElement postText;
 	
 	@FindBy(xpath = "//button[contains(@class,'s__primary-action')]")
