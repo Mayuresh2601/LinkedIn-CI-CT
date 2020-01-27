@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 import com.bridgelabz.linkedin.base.TestBase;
@@ -23,9 +22,6 @@ public class TestUtil extends TestBase{
 		try {
 			file = new FileInputStream("/home/admin1/eclipse-workspace/Mayuresh/Selenium/Linkedin/src/main/java/com/bridgelabz/linkedin/testdata/LinkedInTestData.xlsx");
 			workBook = WorkbookFactory.create(file);
-			
-		} catch (InvalidFormatException e) {
-			e.printStackTrace();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
