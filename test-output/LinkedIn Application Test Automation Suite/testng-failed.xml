@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LinkedIn Application Test Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LinkedIn App Test(failed)">
+    <classes>
+      <class name="com.bridgelabz.linkedin.testcases.JoinNowPageTest">
+        <methods>
+          <include name="registrationPageTest"/>
+          <include name="endTest"/>
+          <include name="beginTest"/>
+        </methods>
+      </class> <!-- com.bridgelabz.linkedin.testcases.JoinNowPageTest -->
+    </classes>
+  </test> <!-- LinkedIn App Test(failed) -->
+</suite> <!-- Failed suite [LinkedIn Application Test Automation Suite] -->
