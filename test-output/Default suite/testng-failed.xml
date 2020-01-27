@@ -3,19 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bridgelabz.linkedin.testcases.SignInPageTest">
+      <class name="com.bridgelabz.linkedin.testcases.HomePageTest">
         <methods>
+          <include name="createTextPostTest" invocation-numbers="0"/>
           <include name="beginTest"/>
-          <include name="validateHidePasswordTest"/>
-          <include name="verifySignInPageTitleTest"/>
+          <include name="uploadImagePostTest" invocation-numbers="1"/>
           <include name="endTest"/>
-          <include name="validateJoinNowLinkTest"/>
-          <include name="validateForgetPasswordLinkTest"/>
-          <include name="validateShowPasswordTest"/>
-          <include name="SignInTest"/>
-          <include name="SignInTest"/>
         </methods>
-      </class> <!-- com.bridgelabz.linkedin.testcases.SignInPageTest -->
+      </class> <!-- com.bridgelabz.linkedin.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
