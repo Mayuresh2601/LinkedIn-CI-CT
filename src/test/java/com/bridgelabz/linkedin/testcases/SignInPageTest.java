@@ -39,11 +39,11 @@ public class SignInPageTest extends TestBase{
 	 * Method: To Test the Sign In Page is working properly or not using properties file
 	 * @throws InterruptedException 
 	 */
-//	@Test
-//	public void SignInTest() throws InterruptedException {
-//		
-//		homePage = signIn.signIn(properties.getProperty("emailId"), properties.getProperty("passWord"));
-//	}
+	@Test
+	public void SignInTest() throws InterruptedException {
+		
+		homePage = signIn.signIn(properties.getProperty("emailId"), properties.getProperty("passWord"));
+	}
 	
 	
 	/**
