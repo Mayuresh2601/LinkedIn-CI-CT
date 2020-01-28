@@ -20,7 +20,7 @@ public class TestUtil extends TestBase{
 	public static Object[][] getData(String sheetName) {
 		
 		try {
-			file = new FileInputStream("/home/admin1/eclipse-workspace/Mayuresh/Selenium/Linkedin/src/main/java/com/bridgelabz/linkedin/testdata/LinkedInTestData.xlsx");
+			file = new FileInputStream("/home/admin1/eclipse-workspace/Mayuresh/LinkedinCI-CT/src/main/java/com/bridgelabz/linkedin/testdata/LinkedInTestData.xlsx");
 			workBook = WorkbookFactory.create(file);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

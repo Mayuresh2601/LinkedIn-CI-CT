@@ -2,6 +2,7 @@ package com.bridgelabz.linkedin.testcases;
 
 import static org.testng.Assert.assertEquals;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -17,10 +18,10 @@ public class SignInPageTest extends TestBase{
 	/**
 	 * Constructor: To Avoid Null Pointer Exception by going to parent class(TestBase) using super()
 	 */
-//	public SignInPageTest() {
-//		
-//		super();
-//	}
+	public SignInPageTest() {
+		
+		super();
+	}
 	
 	
 	/**
@@ -38,34 +39,34 @@ public class SignInPageTest extends TestBase{
 	 * Method: To Test the Sign In Page is working properly or not using properties file
 	 * @throws InterruptedException 
 	 */
-	@Test
-	public void SignInTest() throws InterruptedException {
-		
-		homePage = signIn.signIn(properties.getProperty("emailId"), properties.getProperty("passWord"));
-	}
+//	@Test
+//	public void SignInTest() throws InterruptedException {
+//		
+//		homePage = signIn.signIn(properties.getProperty("emailId"), properties.getProperty("passWord"));
+//	}
 	
 	
 	/**
 	 * Method: To Take SignIn Data form Xlsx File
 	 * @return Data in Object form 
 	 */
-	@DataProvider
-	public Object[][] getSignInTestData() {
-		
-		Object[][] data = TestUtil.getData(properties.getProperty("SigninSheet"));
-		return data;
-	}
-	
-	
-	/**
-	 * Method: To Test the Sign In Page is working properly or not using properties file
-	 * @throws InterruptedException 
-	 */
-	@Test(dataProvider = "getSignInTestData")
-	public void SignInTest(String userName, String password) throws InterruptedException {
-		
-		homePage = signIn.signIn(userName, password);
-	}
+//	@DataProvider
+//	public Object[][] getSignInTestData() {
+//		
+//		Object[][] data = TestUtil.getData(properties.getProperty("SigninSheet"));
+//		return data;
+//	}
+//	
+//	
+//	/**
+//	 * Method: To Test the Sign In Page is working properly or not using properties file
+//	 * @throws InterruptedException 
+//	 */
+//	@Test(dataProvider = "getSignInTestData")
+//	public void SignInTest(String userName, String password) throws InterruptedException {
+//		
+//		homePage = signIn.signIn(userName, password);
+//	}
 	
 	
 	/**
@@ -87,7 +88,7 @@ public class SignInPageTest extends TestBase{
 	public void verifySignInPageTitleTest() {
 		
 		validate = signIn.verifySignInPageTitle();
-		assertEquals(validate, "LinkedIn Login, Sign in | LinkedIn");
+		Assert.assertEquals(validate, "LinkedIn Login, Sign in | LinkedIn");
 	}
 	
 	
