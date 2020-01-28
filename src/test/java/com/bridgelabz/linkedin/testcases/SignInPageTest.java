@@ -5,12 +5,10 @@ import static org.testng.Assert.assertEquals;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.bridgelabz.linkedin.base.TestBase;
 import com.bridgelabz.linkedin.pages.SignInPage;
-import com.bridgelabz.linkedin.util.TestUtil;
 
 public class SignInPageTest extends TestBase{
 	
@@ -44,29 +42,6 @@ public class SignInPageTest extends TestBase{
 		
 		homePage = signIn.signIn(properties.getProperty("emailId"), properties.getProperty("passWord"));
 	}
-	
-	
-	/**
-	 * Method: To Take SignIn Data form Xlsx File
-	 * @return Data in Object form 
-	 */
-//	@DataProvider
-//	public Object[][] getSignInTestData() {
-//		
-//		Object[][] data = TestUtil.getData(properties.getProperty("SigninSheet"));
-//		return data;
-//	}
-//	
-//	
-//	/**
-//	 * Method: To Test the Sign In Page is working properly or not using properties file
-//	 * @throws InterruptedException 
-//	 */
-//	@Test(dataProvider = "getSignInTestData")
-//	public void SignInTest(String userName, String password) throws InterruptedException {
-//		
-//		homePage = signIn.signIn(userName, password);
-//	}
 	
 	
 	/**

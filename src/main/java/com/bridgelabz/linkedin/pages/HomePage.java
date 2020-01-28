@@ -46,16 +46,6 @@ public class HomePage extends TestBase{
 	}
 	
 	
-//	/**Method: To verify Home Page Title
-//	 * @return String
-//	 */
-//	public String verifyHomePageTitle() {
-//		
-//		validate = driver.getTitle();
-//		return validate;
-//	}
-	
-	
 	/**Method: To Create Text Post on Linkedin Profile
 	 * @param text
 	 * @throws InterruptedException

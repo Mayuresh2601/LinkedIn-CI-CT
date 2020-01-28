@@ -60,7 +60,6 @@ public class TestBase {
 	public static void init_Driver(String browserName) {
 		
 		if (browserName.equals("chrome")) {
-			//System.setProperty("webdriver.chrome.driver", "/home/admin1/eclipse-workspace/Mayuresh/Selenium/Linkedin/src/main/java/com/bridgelabz/linkedin/drivers/chromedriver");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}else if (browserName.equals("firefox")) {
