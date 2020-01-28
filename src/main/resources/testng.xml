@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="LinkedIn Application Test Automation Suite">
+	
+	<listeners>
+		<listener class-name="com.bridgelabz.lindedin.extentreport.ExtentReporterNG" />		
+	</listeners>
+	
 	<test name = "LinkedIn App Test">
-		
+	
 		<classes>
 			<class name="com.bridgelabz.linkedin.testcases.JoinNowPageTest" />
 			<class name="com.bridgelabz.linkedin.testcases.SignInPageTest" />
-			<class name="com.bridgelabz.linkedin.testcases.HomePageTest" />
+			<!-- <class name="com.bridgelabz.linkedin.testcases.HomePageTest" /> -->
 		</classes>
 		
 	</test>

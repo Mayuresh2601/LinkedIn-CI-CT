@@ -18,6 +18,8 @@ import com.bridgelabz.linkedin.pages.HomePage;
 import com.bridgelabz.linkedin.pages.JoinNowPage;
 import com.bridgelabz.linkedin.pages.SignInPage;
 import com.bridgelabz.linkedin.util.TestUtil;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -37,6 +39,8 @@ public class TestBase {
 	public static TestUtil utility;
 	public static String validate;
 	public static boolean flag;
+	public static ExtentReports reports;
+	public static ExtentTest extentTest;
 
 	/**
 	 * Constructor: To Load the Properties file in file.io

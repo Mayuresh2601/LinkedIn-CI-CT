@@ -9,13 +9,19 @@ package com.bridgelabz.linkedin.testcases;
 
 import static org.testng.Assert.assertEquals;
 
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.bridgelabz.linkedin.base.TestBase;
 import com.bridgelabz.linkedin.pages.JoinNowPage;
+import com.bridgelabz.linkedin.util.CustomListner;
+import com.bridgelabz.linkedin.util.TestUtil;
+import com.relevantcodes.extentreports.LogStatus;
 
+@Listeners(CustomListner.class)
 public class JoinNowPageTest extends TestBase{
 	
 	
@@ -42,7 +48,7 @@ public class JoinNowPageTest extends TestBase{
 	/**
 	 * Method: To validate Registration Page Title
 	 */
-	@Test
+	@Test(priority = 1)
 	public void verifyRegisterPageTitleTest() {
 		
 		validate = joinNow.verifyRegisterPageTitle();
@@ -53,7 +59,7 @@ public class JoinNowPageTest extends TestBase{
 	/**
 	 * Method: To validate SignIn Page Link is working properly or not
 	 */
-	@Test
+	@Test(priority = 3)
 	public void validateSignInPageLinkTest() {
 		
 		signIn = joinNow.validateSignInPageLink();
@@ -64,7 +70,7 @@ public class JoinNowPageTest extends TestBase{
 	 * Method: To Test the Registration Page is working properly or not 
 	 * @throws InterruptedException 
 	 */
-	@Test
+	@Test(priority = 2)
 	public void registrationPageTest() throws InterruptedException {
 		
 		homePage = joinNow.registrationPage(properties.getProperty("username"), properties.getProperty("password"), properties.getProperty("firstname"), properties.getProperty("lastname"));
@@ -74,11 +80,11 @@ public class JoinNowPageTest extends TestBase{
 	/**
 	 * Method: To validate change Language Link is working properly or not
 	 */
-	@Test
+	@Test(priority = 4)
 	public void validateChangeLanguageLinkTest() {
 		
 		flag = joinNow.validateChangeLanguageLink();
-		assertEquals(flag, true);
+		assertEquals(flag, false);
 	}
 	
 	
@@ -86,8 +92,20 @@ public class JoinNowPageTest extends TestBase{
 	 * Method: To Run Terminate method after running each Testcases
 	 */
 	@AfterMethod
-	public void endTest() {
+	public void endTest(ITestResult result) {
 		
+		if (result.getStatus() == (ITestResult.FAILURE)) {
+			extentTest.log(LogStatus.FAIL, "Failed Test Case is: "+result.getName());
+			extentTest.log(LogStatus.FAIL, "Failed Test Case error is: "+result.getThrowable());
+			
+			String screenshotPath = TestUtil.getScreenShots();
+			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+		}
+		else if (result.getStatus() == (ITestResult.SKIP)) {
+			extentTest.log(LogStatus.SKIP, "Skiped Test Case is: "+result.getName());
+		}
+		
+//		reports.endTest(extentTest);
 		driver.quit();
 	}
 }

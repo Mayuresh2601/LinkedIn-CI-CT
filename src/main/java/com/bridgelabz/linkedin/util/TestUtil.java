@@ -1,10 +1,16 @@
 package com.bridgelabz.linkedin.util;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 import com.bridgelabz.linkedin.base.TestBase;
 
@@ -40,4 +46,31 @@ public class TestUtil extends TestBase{
 		}
 		return data;
 	}
+	
+	public static String getScreenShots() {
+		
+		Date date = new Date();
+    	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+    	String actualDate = formatter.format(date);
+    	
+    	TakesScreenshot screenshot1 = (TakesScreenshot) driver;
+    	
+    	//To get the Source File and store it in file.io
+    	File srcFile1 = screenshot1.getScreenshotAs(OutputType.FILE);
+    	
+    	//To store the screenshot in the destination file
+    	String destination = System.getProperty("user.dir") + "/FailedScreenshots/" + "Linkedin"+actualDate + ".png";
+    	File destFile = new File(destination);
+    	
+    	try {
+    		FileUtils.copyFile(srcFile1, destFile);
+    		Thread.sleep(2000);
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+    	return destination;
+	}
+	
+	
 }
