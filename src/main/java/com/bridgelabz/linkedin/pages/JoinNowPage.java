@@ -3,12 +3,9 @@ package com.bridgelabz.linkedin.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Listeners;
 
 import com.bridgelabz.linkedin.base.TestBase;
-import com.bridgelabz.linkedin.util.CustomListner;
 
-@Listeners(CustomListner.class)
 public class JoinNowPage extends TestBase{
 
 	//Page Factories (Object Repository)

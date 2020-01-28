@@ -50,7 +50,7 @@ public class TestUtil extends TestBase{
 	public static String getScreenShots() {
 		
 		Date date = new Date();
-    	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
+    	SimpleDateFormat formatter = new SimpleDateFormat(" DD/MM/yyyy hh:mm:ss");
     	String actualDate = formatter.format(date);
     	
     	TakesScreenshot screenshot1 = (TakesScreenshot) driver;
@@ -59,7 +59,7 @@ public class TestUtil extends TestBase{
     	File srcFile1 = screenshot1.getScreenshotAs(OutputType.FILE);
     	
     	//To store the screenshot in the destination file
-    	String destination = System.getProperty("user.dir") + "/FailedScreenshots/" + "Linkedin"+actualDate + ".png";
+    	String destination = System.getProperty("user.dir") + "/FailedScreenshots/" + "Linkedin" +actualDate + ".png";
     	File destFile = new File(destination);
     	
     	try {
