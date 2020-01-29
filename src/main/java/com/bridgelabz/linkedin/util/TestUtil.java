@@ -59,7 +59,7 @@ public class TestUtil extends TestBase{
     	File srcFile1 = screenshot1.getScreenshotAs(OutputType.FILE);
     	
     	//To store the screenshot in the destination file
-    	String destination = System.getProperty("user.dir") + "/FailedScreenshots/" + "Linkedin" +actualDate + ".png";
+    	String destination = System.getProperty("user.dir") + "/FailedScreenshots/" +actualDate + ".png";
     	File destFile = new File(destination);
     	
     	try {

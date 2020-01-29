@@ -100,7 +100,7 @@ public class JoinNowPageTest extends TestBase{
 		
 		extentTest = reports.startTest("validateChangeLanguageLinkTest");
 		flag = joinNow.validateChangeLanguageLink();
-		assertEquals(flag, false);
+		assertEquals(flag, true);
 	}
 	
 	

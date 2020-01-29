@@ -5,11 +5,14 @@
     <classes>
       <class name="com.bridgelabz.linkedin.testcases.JoinNowPageTest">
         <methods>
+          <include name="verifyRegisterPageTitleTest"/>
+          <include name="registrationPageTest"/>
           <include name="setReport"/>
           <include name="endReport"/>
           <include name="endTest"/>
           <include name="validateChangeLanguageLinkTest"/>
           <include name="beginTest"/>
+          <include name="validateSignInPageLinkTest"/>
         </methods>
       </class> <!-- com.bridgelabz.linkedin.testcases.JoinNowPageTest -->
     </classes>
