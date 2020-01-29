@@ -1,3 +1,10 @@
+/******************************************************************************
+*  
+*  Purpose: To create automation script of Sign In Linkedin Page
+*  @class Sign In Page Test
+*  @author  Mayuresh Sunil Sonar
+*
+******************************************************************************/
 package com.bridgelabz.linkedin.testcases;
 
 import static org.testng.Assert.assertEquals;

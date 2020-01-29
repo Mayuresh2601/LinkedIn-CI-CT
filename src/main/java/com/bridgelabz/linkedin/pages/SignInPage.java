@@ -1,3 +1,10 @@
+/******************************************************************************
+*  
+*  Purpose: To Implement Sign In web Page Functionalities
+*  @class Sign In Page Class
+*  @author  Mayuresh Sunil Sonar
+*
+******************************************************************************/
 package com.bridgelabz.linkedin.pages;
 
 import org.openqa.selenium.WebElement;

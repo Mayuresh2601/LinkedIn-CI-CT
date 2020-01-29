@@ -1,3 +1,10 @@
+/******************************************************************************
+*  
+*  Purpose: To Implement Page Object Model of Home web Page 
+*  @class Home Page
+*  @author  Mayuresh Sunil Sonar
+*
+******************************************************************************/
 package com.bridgelabz.linkedin.pages;
 
 import java.awt.AWTException;

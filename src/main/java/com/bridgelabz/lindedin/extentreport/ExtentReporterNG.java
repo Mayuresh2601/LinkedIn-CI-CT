@@ -1,3 +1,10 @@
+/******************************************************************************
+*  
+*  Purpose: To Implement Extend Report UI
+*  @class Extend Report 
+*  @author  Mayuresh Sunil Sonar
+*
+******************************************************************************/
 package com.bridgelabz.lindedin.extentreport;
 
 import java.io.File;
