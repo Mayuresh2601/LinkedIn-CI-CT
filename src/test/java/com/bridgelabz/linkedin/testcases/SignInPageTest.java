@@ -10,12 +10,18 @@ package com.bridgelabz.linkedin.testcases;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.bridgelabz.linkedin.base.TestBase;
 import com.bridgelabz.linkedin.pages.SignInPage;
+import com.bridgelabz.linkedin.util.TestUtil;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class SignInPageTest extends TestBase{
 	
@@ -41,12 +47,25 @@ public class SignInPageTest extends TestBase{
 	
 	
 	/**
+	 * Method: To Set the Extent Report in test-output file
+	 */
+	@BeforeTest
+	public void setReport() {
+		
+		reports = new ExtentReports(System.getProperty("user.dir")+ "/test-output/ExtentReport.html", true);
+		reports.addSystemInfo("User Name", "admin1");
+		reports.addSystemInfo("Host Name", "admin1-H110M-H");
+	}
+	
+	
+	/**
 	 * Method: To Test the Sign In Page is working properly or not using properties file
 	 * @throws InterruptedException 
 	 */
 	@Test
 	public void SignInTest() throws InterruptedException {
 		
+		extentTest = reports.startTest("SignInTest");
 		homePage = signIn.signIn(properties.getProperty("emailId"), properties.getProperty("passWord"));
 	}
 	
@@ -58,6 +77,7 @@ public class SignInPageTest extends TestBase{
 	@Test
 	public void validateForgetPasswordLinkTest() throws InterruptedException {
 		
+		extentTest = reports.startTest("validateForgetPasswordLinkTest");
 		flag = signIn.validateForgetPasswordLink(properties.getProperty("username"));
 		assertEquals(flag, true);
 	}
@@ -69,6 +89,7 @@ public class SignInPageTest extends TestBase{
 	@Test
 	public void verifySignInPageTitleTest() {
 		
+		extentTest = reports.startTest("verifySignInPageTitleTest");
 		validate = signIn.verifySignInPageTitle();
 		Assert.assertEquals(validate, "LinkedIn Login, Sign in | LinkedIn");
 	}
@@ -80,6 +101,7 @@ public class SignInPageTest extends TestBase{
 	@Test
 	public void validateShowPasswordTest() {
 		
+		extentTest = reports.startTest("validateShowPasswordTest");
 		flag = signIn.validateShowPassword(properties.getProperty("username") ,properties.getProperty("password"));
 		assertEquals(flag, true);
 	}
@@ -91,6 +113,7 @@ public class SignInPageTest extends TestBase{
 	@Test
 	public void validateJoinNowLinkTest() {
 		
+		extentTest = reports.startTest("validateJoinNowLinkTest");
 		joinNow = signIn.validateJoinNowLink();
 	}
 	
@@ -101,8 +124,20 @@ public class SignInPageTest extends TestBase{
 	@Test
 	public void validateHidePasswordTest() {
 		
+		extentTest = reports.startTest("validateHidePasswordTest");
 		flag = signIn.validateHidePassword(properties.getProperty("username") ,properties.getProperty("password"));
 		assertEquals(flag, true);
+	}
+	
+	
+	/**
+	 * Method: To flush and close the Extent Report
+	 */
+	@AfterTest
+	public void endReport() {
+		
+		reports.flush();
+		reports.close();
 	}
 
 	
@@ -110,8 +145,24 @@ public class SignInPageTest extends TestBase{
 	 * Method: To Run Terminate method after running each Testcases
 	 */
 	@AfterMethod
-	public void endTest() {
+	public void endTest(ITestResult result) {
 		
+		if (result.getStatus() == (ITestResult.SUCCESS)) {
+			
+			extentTest.log(LogStatus.PASS, "Passed Test Case is: "+result.getName());
+		} 
+		else if (result.getStatus() == (ITestResult.FAILURE)) {
+			
+			extentTest.log(LogStatus.FAIL, "Failed Test Case is: "+result.getName());
+			extentTest.log(LogStatus.FAIL, "Failed Test Case error is: "+result.getThrowable());
+			String screenshotPath = TestUtil.getScreenShots();
+			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+		}
+		else if (result.getStatus() == (ITestResult.SKIP)) {
+			
+			extentTest.log(LogStatus.SKIP, "Skiped Test Case is: "+result.getName());
+		}
+		reports.endTest(extentTest);
 		driver.quit();
 	}
 }
